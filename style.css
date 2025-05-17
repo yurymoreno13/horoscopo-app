@@ -1,7 +1,80 @@
+/* Fuente bonita desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  color: #8e44ad;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8e44ad;
+}
+
+button {
+  background-color: #e84393;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:disabled {
+  background-color: #f8a5c2;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #d63074;
+}
+
+#horoscope-message {
+  margin-top: 1.5rem;
+  background-color: #ffe6f0;
+  color: #6d214f;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: opacity 2s ease;
+}
+
 .hidden {
   display: none;
   opacity: 0;
-  transition: opacity 2s ease;
 }
 
 .visible {
