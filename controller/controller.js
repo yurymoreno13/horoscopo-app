@@ -6,7 +6,7 @@ export class HoroscopeController {
 
   init() {
     this.view.input.addEventListener("input", (e) => {
-      const dateStr = e.target.value;
+      const dateStr = e.target.value.trim();
       const valid = /^\d{2}-\d{2}-\d{4}$/.test(dateStr);
       this.view.setButtonEnabled(valid);
     });
